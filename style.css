@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+.card {
+    width: 100%;
+    max-width: 470px;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    color: #fff;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.search {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search input {
+    border: none;
+    outline: none;
+    background: #ebfffc;
+    color: #555;
+    padding: 10px 20px;
+    height: 50px;
+    border-radius: 25px;
+    flex: 1;
+    margin-right: 12px;
+    font-size: 16px;
+}
+
+.search button {
+    border: none;
+    outline: none;
+    background: #ebfffc;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.search button img {
+    width: 20px;
+}
+
+.weather {
+    display: none;
+    margin-top: 20px;
+}
+
+.weather-icon {
+    width: 150px;
+    margin-top: 20px;
+}
+
+.weather h1 {
+    font-size: 60px;
+    font-weight: 500;
+}
+
+.weather h2 {
+    font-size: 35px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+
+.details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 40px;
+}
+
+.col {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.col img {
+    width: 50px;
+    margin-right: 8px;
+}
+
+.humidity, .wind {
+    font-size: 22px;
+    margin-top: -5px;
+}
+
+.error-message {
+    color: #ff4d4d;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+@media (max-width: 500px) {
+    .card {
+        padding: 30px 20px;
+    }
+    .weather h1 {
+        font-size: 50px;
+    }
+    .weather h2 {
+        font-size: 30px;
+    }
+    .details {
+        flex-direction: column;
+        align-items: center;
+    }
+    .col {
+        margin-bottom: 10px;
+    }
+}
